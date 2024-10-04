@@ -47,7 +47,7 @@ export default function Main() {
           </button>
         </form>
       </div>
-      <Content shortUrl={urlData?.shortUrl} qrUrl={urlData?.qrUrl} />
+      <Content shortUrl={urlData?.shortUrl} />
     </main>
   );
 }

@@ -5,6 +5,5 @@ export interface IUrlRequest {
 export interface IUrlResponse {
   baseUrl: string;
   shortUrl: string;
-  qrUrl: string;
   expirationTime: string;
 }
