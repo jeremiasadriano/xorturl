@@ -47,12 +47,7 @@ export default function Main() {
           </button>
         </form>
       </div>
-      <Content
-        baseUrl={urlData?.baseUrl}
-        shortUrl={urlData?.shortUrl}
-        qrUrl={urlData?.qrUrl}
-        expirationTime={urlData?.expirationTime}
-      />
+      <Content shortUrl={urlData?.shortUrl} qrUrl={urlData?.qrUrl} />
     </main>
   );
 }

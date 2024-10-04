@@ -1,19 +1,12 @@
-import { Clipboard, ClipboardCheck, Download } from "lucide-react";
+import { Clipboard, ClipboardCheck } from "lucide-react";
 import { useState } from "react";
 
 type UrlProps = {
-  baseUrl?: string;
   shortUrl?: string;
   qrUrl?: string;
-  expirationTime?: string;
 };
 
-export default function Content({
-  baseUrl,
-  shortUrl,
-  qrUrl,
-  expirationTime,
-}: UrlProps) {
+export default function Content({ shortUrl, qrUrl }: UrlProps) {
   const [copied, setCopied] = useState(false);
 
   const copyToClipboard = async () => {
@@ -29,7 +22,7 @@ export default function Content({
   return (
     <>
       {shortUrl && (
-        <div className="h-96 w-[23%]">
+        <div>
           <div className="response flex gap-8">
             <a
               href={shortUrl}
@@ -44,9 +37,6 @@ export default function Content({
           </div>
           <div className="qr">
             <img src={qrUrl} alt="qr url" />
-            <a href={qrUrl} download="QrCode-link.png">
-              <Download />
-            </a>
           </div>
         </div>
       )}

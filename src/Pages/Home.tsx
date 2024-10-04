@@ -3,7 +3,7 @@ import NavBar from "../components/navbar/NavBar";
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="flex flex-col gap-16">
       <NavBar />
       <Main />
     </div>
