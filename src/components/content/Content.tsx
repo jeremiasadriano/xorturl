@@ -67,7 +67,7 @@ export default function Content({ shortUrl }: UrlProps) {
             {qrCodeImage ? (
               <img src={qrCodeImage} alt="QR code shortener" />
             ) : (
-              <p>Carregando QR code...</p>
+              <p>QR code...</p>
             )}
           </div>
         </div>
